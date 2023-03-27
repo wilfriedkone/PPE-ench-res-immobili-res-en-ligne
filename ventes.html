@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bougie.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="" width="100">
+        </div>
+        <ul class="menu">
+            <li><a href="Acceuil.html">Acceuil</a></li>
+            <li><a href="ventes.html">ventes</a></li>
+            <li><a href="connexioncal.html">Calendrier</a></li>
+            <li><a href="annuaire.html">Annuaires</a></li>
+            <li><a href="#">Résultats</a></li>
+        </ul>
+        <button class="longin_btn"><a href="connexion.html">Connexion</a></button>
+    
+       </header>
+       <!--
+<div class="container">
+    <img id="candlewick" src="candlewick.png" width="150">
+    <img id="smoke" src="smoke.gif">
+</div>
+  -->
+    <div class="box">
+        <form>
+          <label for="arrondissements">Arrondissements:</label>
+          <select id="arrondissements">
+            <option value="">-- Sélectionner un arrondissement --</option>
+            <option value="1">1er arrondissement</option>
+            <option value="2">2ème arrondissement</option>
+            <option value="3">3ème arrondissement</option>
+            <option value="3">4ème arrondissement</option>
+            <option value="3">5ème arrondissement</option>
+            <option value="3">6ème arrondissement</option>
+            <option value="3">7ème arrondissement</option>
+            <option value="3">8ème arrondissement</option>
+            <option value="3">9ème arrondissement</option>
+            <option value="3">10ème arrondissement</option>
+            <option value="3">11ème arrondissement</option>
+            <option value="3">12ème arrondissement</option>
+            <option value="3">13ème arrondissement</option>
+            <option value="3">14ème arrondissement</option>
+            <option value="3">15ème arrondissement</option>
+            <option value="3">16ème arrondissement</option>
+            <option value="3">17ème arrondissement</option>
+            <option value="3">18ème arrondissement</option>
+            <option value="3">19ème arrondissement</option>
+            <option value="3">20ème arrondissement</option>
+
+          </select>
+          <br>
+          <label for="tribunaux">Tribunaux judiciaires:</label>
+          <select id="tribunaux">
+            <option value="">-- Sélectionner un tribunal --</option>
+            <option value="paris-1">Tribunal judiciaire de Paris - 1er arrondissement</option>
+            <option value="paris-2">Tribunal judiciaire de Paris - 2ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 3ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 4ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 5ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 6ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 7ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 8ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 9ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 10ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 11ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 12ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 13ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 14ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 15ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 16ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 17ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 18ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 19ème arrondissement</option>
+            <option value="paris-3">Tribunal judiciaire de Paris - 20ème arrondissement</option>
+            
+          </select>
+          <br>
+          <label for="type">Type:</label>
+          <select id="type">
+            <option value="">-- Sélectionner un type --</option>
+            <option value="appartement">Appartement</option>
+            <option value="commerce">Commerce</option>
+            <option value="maison">Maison</option>
+            <option value="villa">Villa</option>
+          </select>
+          <br>
+          <label for="rayon">Rayon:</label>
+          <select id="rayon">
+            <option value="">-- Sélectionner un rayon --</option>
+            <option value="5">5 km</option>
+            <option value="10">10 km</option>
+            <option value="15">15 km</option>
+            <option value="15">20 km</option>
+            <option value="15">25 km</option>
+            <option value="15">30 km</option>
+            <option value="15">35 km</option>
+            <option value="15">40 km</option>
+            
+          </select>
+          <br>
+          <label for="miseaprix">Mise à prix:</label>
+          <input type="text" id="miseaprix" placeholder="Mise à prix">
+          <br>
+          <button type="submit">Recherche</button>
+        </form>
+      </div>
+
+      <section id="maison">
+        <h1 class="section_title">Nos Maisons</h1>
+        <div class="images">
+            <ul>
+                <li class="appart">
+                    <div>
+                        <img src="maison.jpg" alt="">
+                    </div>
+                    <span>APPARTEMENT</span>
+                    <span class="prix">250.000</span>
+                    <a href="connexion.html">ACHETER MAINTENANT</a>
+                </li>
+                <li class="appart">
+                    <div>
+                        <img src="maison12.jpg" alt="">
+                    </div>
+                    <span>MAISON</span>
+                    <span class="prix">20.000</span>
+                    <a href="connexion.html">ACHETER MAINTENANT</a>
+                </li>
+                <li class="appart">
+                    <div>
+                        <img src="maison2.jpg" alt="">
+                    </div>
+                    <span>APPARTEMENT</span>
+                    <span class="prix">25.000</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                </li>
+                <li class="appart">
+                    <div>
+                        <img src="maison3.jpg" alt="">
+                    </div>
+                    <span>APPARTEMENT</span>
+                    <span class="prix">100.000</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                </li>
+                <li class="appart">
+                    <div>
+                        <img src="maison4.jpg" alt="">
+                    </div>
+                    <span>APPARTEMENT</span>
+                    <span class="prix">20.000</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                </li>
+                <li class="appart">
+                    <div>
+                        <img src="maison5.jpg" alt="">
+                    </div>
+                    <span>APPARTEMENT</span>
+                    <span class="prix">50.000</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                </li>
+                <li class="appart">
+                    <div>
+                        <img src="maison6.jpg" alt="">
+                    </div>
+                    <span>APPARTEMENT</span>
+                    <span class="prix">39.000</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                </li>
+                <li class="appart">
+                    <div>
+                        <img src="maison7.jpg" alt="">
+                    </div>
+                    <span>APPARTEMENT</span>
+                    <span class="prix">50.000</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                </li>
+                <li class="appart">
+                    <div>
+                        <img src="maison8.jpg" alt="">
+                    </div>
+                    <span>APPARTEMENT</span>
+                    <span class="prix">10.000</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                </li>
+                <li class="appart">
+                    <div>
+                        <img src="maison9.jpg" alt="">
+                    </div>
+                    <span>APPARTEMENT</span>
+                    <span class="prix">250.000</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                </li>
+                <li class="appart">
+                    <div>
+                        <img src="maison10.jpg" alt="">
+                    </div>
+                    <span>APPARTEMENT</span>
+                    <span class="prix">50.000</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                </li>
+                <li class="appart">
+                    <div>
+                        <img src="maison11.jpg" alt="">
+                    </div>
+                    <span>APPARTEMENT</span>
+                    <span class="prix">250.000$</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                </li>
+            </ul>
+        </div>
+
+      </section>
+</body>
+</html>

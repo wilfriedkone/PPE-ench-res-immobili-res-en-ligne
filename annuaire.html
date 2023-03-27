@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de ventes à consulter</title>
+	<style>
+		.search_box {
+
+border: 1px solid #ccc;
+
+padding: 10px;
+
+width: 400px;
+
+margin: 0 auto;
+margin-top: 100px;
+margin-bottom: 50px;
+
+text-align: center;
+background: #000;
+
+
+}
+
+
+
+label {
+
+display: inline-block;
+
+margin-right: 10px;
+
+}
+
+
+
+select {
+
+width: 200px;
+
+padding: 5px;
+
+margin-right: 10px;
+
+}
+
+
+
+#search-btn {
+
+background-color: yellow;
+
+color: #000;
+
+border: none;
+
+padding: 10px 20px;
+
+cursor: pointer;
+
+transition: all 0.3s ease-in-out;
+
+}
+
+
+
+#search-btn:hover {
+
+background-color: #687132;
+
+}
+
+
+
+	</style>
+
+</head>
+<body>
+	<header>
+        <div class="logo">
+            <img src="logo.png" alt="" width="100">
+        </div>
+        <ul class="menu">
+            <li><a href="Acceuil.html">Acceuil</a></li>
+            <li><a href="ventes.html">ventes</a></li>
+            <li><a href="connexioncal.html">Calendrier</a></li>
+            <li><a href="annuaire.html">Annuaires</a></li>
+            <li><a href="#">Résultats</a></li>
+        </ul>
+        <button class="longin_btn"><a href="connexion.html">Connexion</a></button>
+    
+       </header>
+	   <section class="who-is"><div class="search-box">
+		<div class="search_box">
+
+		<label for="arrondissement-select">Arrondissement :</label>
+	  
+		<select id="arrondissement-select">
+	  
+			<option value="">-- Sélectionner un arrondissement --</option>
+            <option value="1">1er arrondissement</option>
+            <option value="2">2ème arrondissement</option>
+            <option value="3">3ème arrondissement</option>
+            <option value="3">4ème arrondissement</option>
+            <option value="3">5ème arrondissement</option>
+            <option value="3">6ème arrondissement</option>
+            <option value="3">7ème arrondissement</option>
+            <option value="3">8ème arrondissement</option>
+            <option value="3">9ème arrondissement</option>
+            <option value="3">10ème arrondissement</option>
+            <option value="3">11ème arrondissement</option>
+            <option value="3">12ème arrondissement</option>
+            <option value="3">13ème arrondissement</option>
+            <option value="3">14ème arrondissement</option>
+            <option value="3">15ème arrondissement</option>
+            <option value="3">16ème arrondissement</option>
+            <option value="3">17ème arrondissement</option>
+            <option value="3">18ème arrondissement</option>
+            <option value="3">19ème arrondissement</option>
+            <option value="3">20ème arrondissement</option>
+	  
+		</select>
+		<!--<label for="date-select">Date :</label>
+	  
+		<select id="date-select">
+		  <option value="">Sélectionnez une date</option>
+	  
+		   Ajoutez ici les dates du mois actuel en format jj/mm/aaaa 
+	  
+		</select> --> <br><br>
+		<button id="search-btn">Recherche</button>
+	  
+	  </div>
+	  
+	  
+    <table width="100%" class="table_vente">
+        <thead class="thead-light">
+            <tr><th>Tribunal judiciaire</th>
+            <th>Adresse</th>
+            <th>Numéro</th>
+        </tr></thead>
+        <tbody>
+                 <tr>
+                     <td>TJ de Paris 1er Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-aix en provence.html?date=1678662000">
+                                Paris 1er Arrondissements                           </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-aix en provence.html?date=1678662000">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                 <tr>
+                        <td>TJ de Paris 2ème Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-angers.html?date=1678662000">
+								Paris 2ème Arrondissements                          </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-angers.html?date=1678662000">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td>TJ de Paris 3ème Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-la roche sur yon.html?date=1678662000">
+                                Paris 3ème Arrondissements                           </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-la roche sur yon.html?date=1678662000">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td>TJ de Paris 4ème Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-ales.html?date=1678748400">
+                                Paris 4ème Arrondissements                             </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-ales.html?date=1678748400">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td>TJ de Paris 5ème Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-bobigny.html?date=1678748400">
+								Paris 5ème Arrondissements                      </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-bobigny.html?date=1678748400">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td>TJ de Paris 6ème Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-chalons en champagne.html?date=1678748400">
+                                 Paris 6ème Arrondissements                            </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-chalons en champagne.html?date=1678748400">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td>TJ de Paris 7ème Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-foix.html?date=1678748400">
+                                Paris 7ème Arrondissements                           </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-foix.html?date=1678748400">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td> TJ de Paris 8ème Arrondissements </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-grenoble.html?date=1678748400">
+                               Paris 8ème Arrondissements                           </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-grenoble.html?date=1678748400">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                    </tr>
+                <tr>
+                        <td> TJ de Paris 9ème Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-poitiers.html?date=1678748400">
+                                Paris 9ème Arrondissements                          </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-poitiers.html?date=1678748400">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td> TJ de Paris 10ème Arrondissements </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-pontoise.html?date=1678748400">
+                                Paris 10ème Arrondissements                           </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-pontoise.html?date=1678748400">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td>TJ de Paris 11ème Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-sens.html?date=1678748400">
+                                Paris 11ème Arrondissements                           </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-sens.html?date=1678748400">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td>TJ de Paris 12ème Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-tours.html?date=1678748400">
+                                Paris 12ème Arrondissements                         </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-tours.html?date=1678748400">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td>TJ de Paris 13ème Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-vannes.html?date=1678748400">
+                                Paris 13ème Arrondissements                           </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-vannes.html?date=1678748400">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td>TJ de Paris 14ème Arrondissements </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-villefranche sur saone.html?date=1678748400">
+                                Paris 14ème Arrondissements                            </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-villefranche sur saone.html?date=1678748400">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td>TJ de Paris 15ème Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-ajaccio.html?date=1678834800">
+                                Paris 15ème Arrondissements                          </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-ajaccio.html?date=1678834800">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td>TJ de Paris 16ème Arrondissements </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-dijon.html?date=1678834800">
+                                Paris 16ème Arrondissements                           </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-dijon.html?date=1678834800">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943  
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td>TJ de Paris 17ème Arrondissements </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-lille.html?date=1678834800">
+							  Paris 17ème Arrondissements                           </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-lille.html?date=1678834800">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td> TJ de Paris 18ème Arrondissements </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-marseille.html?date=1678834800">
+                                Paris 18ème Arrondissements                           </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-marseille.html?date=1678834800">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943  
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td> TJ de Paris 19ème Arrondissements</td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-saint quentin.html?date=1678834800">
+                                Paris 19ème Arrondissements                            </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-saint quentin.html?date=1678834800">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+                <tr>
+                        <td> TJ de Paris 20ème Arrondissements </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-versailles.html?date=1678834800">
+                                Paris 20ème Arrondissements                            </a>
+                        </td>
+                        <td>
+                            <a href="./liste-des-ventes-au-tribunal-judiciaire-versailles.html?date=1678834800">
+                                <i class="fa fa-eye"></i>
+                                +33 0967548943 
+                            </a>
+                        </td>
+                 </tr>
+               
+                                                               
+        </tbody>
+    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

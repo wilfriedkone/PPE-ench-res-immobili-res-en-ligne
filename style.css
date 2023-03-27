@@ -1,0 +1,354 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Arapey&family=Cormorant+Upright:wght@300&family=Crimson+Text:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Arapey" , "Cormorant";
+    box-sizing: border-box;
+    transition: all.2s linear;
+    text-decoration: none;
+    border: none;
+   
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+body{
+    position: relative;
+    height: auto;
+   
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    height: 75px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    margin: 0 15px;
+}
+.menu li a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    transition: 0.2s;
+      
+}
+.menu li a:hover{
+    color: #ffd601;
+}
+header button{
+    background-color: #ffd601;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 25px;
+    border-radius: 20%;
+}
+#home {
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+     background-color: #ffd601;
+}
+::-webkit-scrollbar-track{
+    background-color: #222;
+}
+
+#home .left{
+    width: 40%;
+}
+#home .left h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+#home .left h1 span{
+    color: #ffd601;
+}
+#home .left p{
+    margin-bottom: 30px;
+    color: #999;
+    font-size: 13px;
+}
+#home .left a{
+    background-color: #ffd601;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    transition: 0.5s;
+}
+#home .left a:hover{
+    background-color: #000;
+}
+#home .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .right img{
+    width: 100%;
+}
+/* explication **/
+
+.explication {
+    padding: 0 10%;
+}
+ .title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 1px;
+ }
+ .sub-title {
+    text-align: center;
+    color: #ffd601;
+    margin: 20px 0;
+ }
+ .list-services {
+    display: grid;
+    grid-template-columns: repeat(3 ,50rem);
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    
+ }
+ .list-services .box{
+    padding: 30px;
+    background-color: #f9fcd5;
+    border-radius: 6px;
+    transition: 0.5s;
+    
+    
+}
+.list-services .box h1{
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.list-services .box p{
+    font-size: 16px;
+}
+.list-services .box:hover{
+    background-color: #ffd601;
+}
+.banner{
+    height: 50vh;
+    background: url(tribunal.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #000;
+    border: 1px solid #ccc;
+    padding: 77px;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #fcd703;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  select {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 200px;
+  }
+  
+  input[type="text"] {
+    padding: 8px 16px;
+    border: 1;
+    margin-top: 10px;
+    
+  
+  }  
+#maison {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .section_title {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 25px;
+    padding: 1%;
+  }
+  .section_title::before {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    content: "";
+    background-color: #fcd703;
+    width: 100%;
+    height: 5px;
+    border-radius: 6px;
+
+
+  }
+  .section_title::after {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    content: "";
+    background-color: #fcd703;
+    width: 100%;
+    height: 5px;
+    border-radius: 6px;
+  }
+  .images{
+    margin: 100px auto;
+    padding: 0 8%;
+  }
+  .images ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .images li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.665%;
+    transition: 0.5s;
+    height: 300px;
+    width: 28%;
+  }
+  .images li div{
+    width: 100%;
+    height: 60%;
+    margin-bottom: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0.3);
+  }
+  .images li div img{
+    height: 100%;
+    width: 100%;
+  }
+  .images li:hover{
+    transform: scale(1.1);
+    margin: 20px;
+  }
+  .images li span{
+    color: #000;
+    font-size: 18px;
+  }
+#maison li span.prix {
+    color: #fcd703;
+    font-weight: bold;
+    margin-bottom: 10px;
+}  
+#maison li a{
+    background-color: #fcd703;
+    color: #000;
+    padding: 5px 20px;
+    font-size: 15px;
+}
+/*
+#candlewick{
+  position: relative;
+  z-index: 1;
+}
+#smoke {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  opacity: 0; /* La fumée est invisible au début *
+  z-index: 2;
+
+}
+**/
+.container{
+  display: inline-block;
+  vertical-align: middle;
+}
+img{
+  vertical-align: middle;
+  float: l;
+}
+
+/* calendrier **/
+.table_vente{
+  border-collapse: collapse;
+  width: 100%;
+}
+.table_vente td,
+.table_vente th{
+  border: 1px solid gray;
+  padding: 7px;
+}
+.table_vente th {
+  background: #000;
+  color: #ffd601;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.table_vente tr:nth-child(even) {
+  background-color: #ccc;
+}
+.table_vente tr {
+  text-align: center;
+  font-size: 16px;
+}
+.table_vente tr:hover{
+  background: #ffd601;
+}
+.table_vente td a {
+  color: #000;
+}
+

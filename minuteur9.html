@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page d'enchères</title>
+
+	<style>
+
+		.container {
+
+			display: flex;
+
+			flex-wrap: wrap;
+
+			justify-content: space-around;
+
+		}
+
+		
+
+		.item {
+
+			margin: 20px;
+
+			text-align: center;
+
+		}
+
+		
+
+		.item img {
+
+            width: 100%;
+
+            height: 60%;
+
+            margin-bottom: 5px;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0.3);
+            
+			width: 200px;
+
+			height: 200px;
+
+		}
+        
+        .item img:hover{
+            transform: scale(1.1);
+            margin: 20px;
+        }
+
+		
+
+		.item h3 {
+
+			margin-top: 10px;
+            color: #ffd601;
+
+		}
+
+		
+
+		.item p {
+
+			margin-top: 5px;
+
+			line-height: 1.5;
+
+		}
+
+		
+
+		.item button {
+
+			margin-top: 10px;
+
+			padding: 10px;
+
+			font-size: 18px;
+
+			background-color: #ffd601;
+
+			color: #000;
+
+			border: none;
+
+			border-radius: 5px;
+
+			cursor: pointer;
+
+		}
+
+		
+
+		.timer {
+
+			font-size: 36px;
+
+			text-align: center;
+
+			margin-top: 20px;
+
+		}
+
+	</style>
+</head>
+<body>
+    <div class="container">
+
+		<div class="item">
+
+			<img src="maison.jpg" alt="Image 1">
+
+			<h3>Description de l'image 1</h3>
+
+			<p>Ligne 1 du texte de description</p>
+
+			<p>Ligne 2 du texte de description</p>
+
+			<p>Ligne 3 du texte de description</p>
+
+			<p>Prix : <span id="price1">10000</span> €</p>
+
+			<button onclick="increasePrice('price1')">Enchérir</button>
+
+		</div>
+
+		<div class="item">
+
+			<img src="maison2.jpg" alt="Image 2">
+
+			<h3>Description de l'image 2</h3>
+
+			<p>Ligne 1 du texte de description</p>
+
+			<p>Ligne 2 du texte de description</p>
+
+			<p>Ligne 3 du texte de description</p>
+
+			<p>Prix : <span id="price2">10000</span> €</p>
+
+			<button onclick="increasePrice('price2')">Enchérir</button>
+
+		</div>
+
+		<div class="item">
+
+			<img src="maison3.jpg" alt="Image 3">
+
+			<h3>Description de l'image 3</h3>
+
+			<p>Ligne 1 du texte de description</p>
+
+			<p>Ligne 2 du texte de description</p>
+
+			<p>Ligne 3 du texte de description</p>
+
+			<p>Prix : <span id="price3">10000</span> €</p>
+
+			<button onclick="increasePrice('price3')">Enchérir</button>
+
+		</div>
+
+		<div class="item">
+
+			<img src="maison4.jpg" alt="Image 4">
+
+			<h3>Description de l'image 4</h3>
+
+			<p>Ligne 1 du texte de description</p>
+
+			<p>Ligne 2 du texte de description</p>
+
+			<p>Ligne 3 du texte de description</p>
+
+			<p>Prix : <span id="price4">10000</span> €</p>
+
+			<button onclick="increasePrice('price4')">Enchérir</button>
+
+		</div>
+
+	</div>
+
+	
+
+	
+
+	<div class="timer">3:00</div>
+
+	
+
+	<script>
+
+		let timer = 180; // 3 minutes en secondes
+
+		let intervalId = setInterval(updateTimer, 1000);
+
+		
+
+		function updateTimer() {
+
+			let minutes = Math.floor(timer / 60);
+
+			let seconds = timer % 60;
+
+			document.querySelector('.timer').textContent = minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+
+			timer--;
+
+			if (timer < 0) {
+
+				clearInterval(intervalId);
+
+				let lastPrice = parseInt(document.querySelector('.selected .price').textContent);
+
+				savePrice(lastPrice);
+
+				timer = 180;
+
+				intervalId = setInterval(updateTimer, 1000);
+
+				selectItem(null);
+
+			}
+
+		}
+
+		
+
+		function increasePrice(id) {
+
+			let priceSpan = document.querySelector('#' + id);
+
+			let currentPrice = parseInt(priceSpan.textContent);
+
+			let newPrice = currentPrice + 2000;
+
+			priceSpan.textContent = newPrice;
+
+			selectItem(document.querySelector('#' + id).parentNode);
+
+		}
+
+		
+
+		let selectedElement = null;
+
+		
+
+		function selectItem(element) {
+
+			if (selectedElement != null) {
+
+				selectedElement.classList.remove('selected');
+
+			}
+
+			selectedElement = element;
+
+			if (selectedElement != null) {
+
+				selectedElement.classList.add('selected');
+
+			}
+
+		}
+
+		
+
+		function savePrice(price) {
+
+			// Envoie le prix à un script PHP qui l'enregistre dans la base de données
+
+			let xhr = new XMLHttpRequest();
+
+			xhr.open('POST', 'save_price.php');
+
+			xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+			xhr.onload = function() {
+
+				console.log(xhr.responseText);
+
+			}
+
+			xhr.send('price=' + price);
+
+		}
+
+	</script>
+    
+
+</body>
+</html>
